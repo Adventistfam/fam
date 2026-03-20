@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doações - Sua contribuição transforma vidas. Saiba como apoiar nossa missão em Moçambique.">
+    <title>Doações - Adventist Fam</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="navbar-logo">
+                <div class="navbar-logo-icon">✝️</div>
+                <span>Adventist Fam</span>
+            </a>
+            
+            <button class="navbar-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-menu">
+                <li><a href="../index.html" class="navbar-link" data-translate="menu_home">Home</a></li>
+                <li><a href="sobre.html" class="navbar-link" data-translate="menu_sobre">Sobre</a></li>
+                <li><a href="missao.html" class="navbar-link" data-translate="menu_missao">Missão</a></li>
+                <li><a href="projetos.html" class="navbar-link" data-translate="menu_projetos">Projetos</a></li>
+                <li><a href="doacoes.html" class="navbar-link active" data-translate="menu_doacoes">Doações</a></li>
+                <li><a href="equipa.html" class="navbar-link" data-translate="menu_equipa">Equipa</a></li>
+                <li><a href="impacto.html" class="navbar-link" data-translate="menu_impacto">Impacto</a></li>
+                <li><a href="galeria.html" class="navbar-link" data-translate="menu_galeria">Galeria</a></li>
+                <li><a href="participar.html" class="navbar-link" data-translate="menu_participar">Participar</a></li>
+                <li><a href="contato.html" class="navbar-link" data-translate="menu_contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('../images/bg-sobre.jpg'); min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="doacoes_title">Doações</h1>
+            <p class="hero-subtitle" data-translate="doacoes_subtitle">Sua contribuição transforma vidas</p>
+        </div>
+    </section>
+
+    <!-- Opções de Doação -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid">
+                <!-- M-Pesa -->
+                <div class="donation-card" data-animate="fadeIn">
+                    <div class="donation-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="donation-title" data-translate="doacoes_mpesa_title">M-Pesa</h3>
+                    <p class="donation-info" style="font-size: 1.5rem; font-weight: 700; color: var(--primary-green);">+258 847640849</p>
+                    <p class="donation-label" data-translate="doacoes_mpesa_nome">Titular: Uele Felisberto</p>
+                    <button class="btn btn-primary" onclick="copyToClipboard('+258847640849', 'Número M-Pesa copiado!')" style="margin-top: 1rem;">
+                        <i class="fas fa-copy"></i> <span data-translate="btn_copiar">Copiar</span>
+                    </button>
+                </div>
+                
+                <!-- BIM -->
+                <div class="donation-card" data-animate="fadeIn">
+                    <div class="donation-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="donation-title" data-translate="doacoes_bim_title">BIM</h3>
+                    <p class="donation-info" style="font-size: 1.5rem; font-weight: 700; color: var(--primary-green);" data-translate="doacoes_bim_conta">Conta: 863896066</p>
+                    <p class="donation-label" data-translate="doacoes_bim_nome">Titular: Uele Felisberto</p>
+                    <button class="btn btn-primary" onclick="copyToClipboard('863896066', 'Número da conta copiado!')" style="margin-top: 1rem;">
+                        <i class="fas fa-copy"></i> <span data-translate="btn_copiar">Copiar</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Transferência Internacional -->
+            <div class="text-center" style="margin-top: 4rem;">
+                <div class="card" data-animate="fadeIn" style="max-width: 600px; margin: 0 auto;">
+                    <div class="card-body" style="padding: 3rem;">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="card-title" data-translate="doacoes_internacional_title">Transferência Internacional</h3>
+                        <p class="card-text" style="margin-bottom: 1.5rem;">Para doações internacionais, entre em contato conosco para receber os dados bancários completos.</p>
+                        <button id="btn-international" class="btn btn-primary btn-large" data-translate="doacoes_internacional_btn">Solicitar Dados Internacionais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparência -->
+    <section class="section section-bg" style="background-image: url('../images/galeria-comunidade.jpg');">
+        <div class="container section-content">
+            <div class="section-header">
+                <h2 class="section-title" data-translate="transparencia_title">Transparência</h2>
+            </div>
+            
+            <div class="card">
+                <div class="card-body" style="padding: 3rem;">
+                    <p class="card-text" style="font-size: 1.125rem; line-height: 1.8; text-align: center; max-width: 800px; margin: 0 auto; color: var(--dark-gray);" data-translate="transparencia_text">
+                        Comprometemo-nos a usar todos os recursos de forma responsável e transparente. Cada contribuição é direcionada para os projetos e causas sociais.
+                    </p>
+                    
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <button class="btn btn-primary btn-large" onclick="showNotification('Relatório em breve disponível!')" data-translate="transparencia_btn">
+                            <i class="fas fa-file-download"></i> Baixar Relatório Financeiro
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Internacional -->
+    <div id="modal-international" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-international" class="modal-close">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="modal-title">Solicitar Dados Internacionais</h3>
+            <p class="modal-text">Entre em contato conosco pelo email ou WhatsApp para receber os dados completos para transferência internacional.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:ministerioevangelico10@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/258847640849" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Adventist Fam</h4>
+                    <p data-translate="footer_familia">Família Adventista dedicada à missão em Moçambique</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <p><a href="sobre.html" data-translate="menu_sobre">Sobre Nós</a></p>
+                    <p><a href="projetos.html" data-translate="menu_projetos">Projetos</a></p>
+                    <p><a href="doacoes.html" data-translate="menu_doacoes">Doações</a></p>
+                    <p><a href="contato.html" data-translate="menu_contato">Contato</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> +258 847640849</p>
+                    <p><i class="fas fa-envelope"></i> ministerioevangelico10@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maputo, Moçambique</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Adventist Fam. <span data-translate="footer_direitos">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante de Oração -->
+    <div class="prayer-float">
+        <button id="prayer-btn" class="prayer-float-btn">
+            <i class="fas fa-praying-hands"></i>
+            <span data-translate="oracao_btn">Estive aqui, vou orar</span>
+        </button>
+    </div>
+
+    <!-- Modal de Oração -->
+    <div id="prayer-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="prayer-close" class="modal-close">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-praying-hands"></i>
+            </div>
+            <h3 class="modal-title" data-translate="oracao_modal_title">Oração</h3>
+            <p class="modal-text" data-translate="oracao_modal_text">Obrigado pela sua visita. Que Deus te abençoe e guie sua vida.</p>
+            <button id="prayer-amen" class="btn btn-primary btn-large" data-translate="oracao_btn_amen">Amém</button>
+            <p id="prayer-counter" class="modal-counter">0 orações realizadas</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
